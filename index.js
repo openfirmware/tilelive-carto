@@ -103,6 +103,8 @@ module.exports = function(tilelive, options) {
         }
 
         var sourceURI = {
+          hostname: uri.hostname,
+          pathname: uri.pathname,
           protocol: "mapnik:",
           xml: xml,
           query: uri.query
